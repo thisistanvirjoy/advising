@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Online Course Advising System</title>
+    <link rel="stylesheet" href="./css/style2.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            flex: 0 0 30%;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 50px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img id="logo" src="./img/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="admin/index.php">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./student/signin_student.php">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./advisor/signin_advisor.php">Advisor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./faculty/signin_faculty.php">Faculty</a>
+                </li>
+            </ul>
+        </div>
+        <marquee direction="left">
+            <p>Welcome to Online Course Registration System</p>
+        </marquee>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center my-4">Welcome to the Online Course Advising System</h1>
+        <p class="text-center">Efficiently manage your courses, registration, and academic records with our system!</p>
+
+        <div class="features">
+            <div class="feature-box">
+                <i class="fa fa-user-graduate feature-icon"></i>
+                <h3>Student Portal</h3>
+                <p>Register for courses, view your grades, and manage your academic journey.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa fa-chalkboard-teacher feature-icon"></i>
+                <h3>Advisor Portal</h3>
+                <p>Assist students with course approvals and academic planning.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa fa-user-cog feature-icon"></i>
+                <h3>Admin Panel</h3>
+                <p>Oversee system operations, manage users, and maintain data integrity.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa fa-book-open feature-icon"></i>
+                <h3>Faculty Portal</h3>
+                <p>View course schedules, manage offered courses, and track student performance.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Copyright &copy; 2024 All Rights Reserved
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
